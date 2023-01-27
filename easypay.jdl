@@ -1,0 +1,42 @@
+
+entity FundsTransfer {
+    transactionId String unique required,
+	responseCode String,
+    sessionID String,
+    channelCode Integer required,
+    nameEnquiryRef String required,
+    amount BigDecimal required,
+    destinationInstitutionCode String required,
+    beneficiaryAccountName String required,
+    beneficiaryAccountNumber String required,
+    beneficiaryKYCLevel Integer required,
+    beneficiaryBankVerificationNumber String required,
+    beneficiaryNarration String required,
+    originatorAccountName String required,
+    originatorAccountNumber String required,
+    originatorBankVerificationNumber String required,
+    originatorKYCLevel Integer required,
+    originatorNarration String required,
+    transactionLocation String required,
+    mandateReferenceNumber String required,
+    billerId String required,
+    paymentReference String required,
+    createdDate Instant required
+
+}
+
+// Set pagination options
+paginate * with pagination
+
+// Use Data Transfert Objects (DTO)
+ dto * with mapstruct
+
+// Set service options to all except few
+
+
+// Set an angular suffix
+// angularSuffix * with mySuffix
+filter *
+
+//search * with elasticsearch
+

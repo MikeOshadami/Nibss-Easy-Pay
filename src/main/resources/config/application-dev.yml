@@ -131,3 +131,23 @@ jhipster:
 # ===================================================================
 
 # application:
+
+nibss:
+  easypay:
+    testMode: false
+    institutionCode: '00000'
+    sourceInstitutionCode: '00000'
+    billerId: 00000-000-000-4F7B-0000000
+    originatorAccountName: Remita Payment System Limited
+    originatorAccountNumber: 638383333
+    originatorBankVerificationNumber: '1234567890'
+    originatorKYCLevel: 3
+    mandateReferenceNumber: MA-000000-00000-00000
+    transactionLocation: 1.38716,3.05117
+    clientId: 5fggggg-33ab-496a-ddddd-gfddddd
+    clientSecret: 94x8Q~9sjdhdhdd8GFDAGGHFFSHS
+    tokenUrl: https://apitest.nibss-plc.com.ng/reset
+    balanceEnquiryUrl: https://apitest.nibss-plc.com.ng/nipservice/v1/nip/balanceenquiry
+    nameEnquiryUrl: https://apitest.nibss-plc.com.ng/nipservice/v1/nip/nameenquiry
+    fundsTransferUrl: https://apitest.nibss-plc.com.ng/nipservice/v1/nip/fundstransfer
+    tsqUrl: https://apitest.nibss-plc.com.ng/nipservice/v1/nip/tsq
